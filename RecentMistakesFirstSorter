@@ -1,0 +1,11 @@
+import java.util.List;
+import java.util.Collections;
+
+public class RecentMistakesFirstSorter implements CardOrganizer {
+    @Override
+    public void organizeCards(List<Card> cards) {
+        // Implement sorting logic: recent mistakes first
+        // For simplicity, we'll just shuffle them
+        Collections.shuffle(cards);
+    }
+}
