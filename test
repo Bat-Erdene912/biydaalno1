@@ -1,0 +1,13 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class MainTest {
+
+    @Test
+    public void testCardCreation() {
+        Card card = new Card("What is Java?", "A programming language");
+        assertEquals("What is Java?", card.getQuestion());
+        assertEquals("A programming language", card.getAnswer());
+    }
+}
